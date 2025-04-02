@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo&display=swap">
+    <title>all dill</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js" defer></script>
+    <script src="main.js" defer></script>
+  </head>
+<body>
+  <div class="page-container">
+      <div class="Decorator">
+        <div class="arg">
+          <div id="logo">
+			<a href="index.html"><img src="Logo.png" alt="Logo"></a>
+          </div>
+        </div>
+        <div class="arg align-right">
+          <div id="search">
+            <div id="search-in" class="flex">
+              <input type="search" placeholder="Search">
+              <button>Submit</button>
+            </div>
+          </div>
+          
+          <div id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Company Profile</a></li>
+              <li><a href="tomato_all.html">Products</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">R & D</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div class="contand">
+    <div id="tomato">
+        <img src="199.jpg" alt="tomatoes">
+    </div>
+  </div>
+
+<div class="background">
+  <div class="Decorator">
+  <div class="exposition">
+
+    <h2 class="textagridera">Dill seeds for fresh market Agridera</h2>
+    
+    <p class="text2">×××××</p>
+
+    <p class="textarg">Agridera aims to become one of the world's leading companies in the breeding, production and marketing of dill seeds. We invest heavily in research and development to provide solutions to producers and consumers in many countries around the world. In particular, we develop improved disease-resistant varieties adapted to various markets around the world. Currently, the focus is on combining resistance to dill wilt virus with other soil-borne diseases into superior dill breeding lines and hybrids. In addition, extensive efforts are being made to develop varieties resistant to the virus. 
+      Combinations of quality characteristics and disease resistance are sought in various types. Combinations of quality characteristics and disease resistance are sought in various types. We are committed to optimizing the balance between yield, adaptability, and resistance, ensuring that our dill varieties perform exceptionally in diverse climatic conditions. Through continuous innovation, our breeding programs focus on enhancing essential oil content, improving leaf structure, and extending the harvest window. Additionally, we collaborate with global agricultural experts to integrate cutting-edge genetic advancements into our breeding lines. By prioritizing sustainability and efficiency, we strive to deliver superior seed solutions that meet the ever-evolving demands of the market. We also work to improve resistance to adverse climatic conditions, such as drought and sudden temperature changes. Particular attention is paid to breeding varieties with high yields that are maintained even in difficult growing conditions. Our innovative methods include the use of molecular markers to speed up the process of selecting promising hybrids. </p>    
+        <div class="highlight-box">
+          <p>
+            <strong>Dill gives dishes an attractive appearance and a special taste. Dried greens can be added to many seasonings, and dried inflorescences and seeds are irreplaceable in canning.</strong>.
+          </p>
+        </div>	
+        <div class="breeding-programs">
+          <div class="program-card">
+            <h3>Seed preparation</h3>
+            <hr>
+            <p><strong>To always have dill on your table, sow it during the spring and summer at intervals of 10-15 days. The last sowing in open ground is in mid-August. When sowing dry seeds, shoots will appear only after 20-25 days and only under the condition of constant high soil moisture. Slow germination of seeds does not allow for loosening and removing quickly appearing weeds.</strong></p>
+          </div>
+        
+          <div class="program-card">
+            <h3>Sowing</h3>
+            <hr>
+            <p><strong>To ensure germination on the 4th-6th day, the seeds are soaked for 3 days to remove essential oils that prevent germination. Initially, the seeds in a cloth bag are washed for 2-3 minutes in a stream of hot water (60°C), and then placed in water at room temperature for 2-3 days. In this case, the water is changed 2-3 times a day, and the seeds are washed in running cold water. Before sowing, dry the seeds until they are loose.</strong> </p>
+          </div>
+        
+          <div class="program-card">
+            <h3>
+              Little tricks</h3>
+            <hr>
+            <p><strong>• do not add ash or lime before sowing, otherwise the dill will turn red and be thin - it likes slightly acidic soil;
+              • do not sow it in shaded areas, where it stretches out, becomes pale, quickly begins to bolt, forming weak umbrellas with flowers;
+              • when sowing, soak the furrows with a solution of mullein (1:10) or vermicompost;
+              • the soil should always be moist to a depth of 15 cm</strong> </p>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <p>
+            <strong>Agridera operates through international and local distributers around the world</strong>.
+          </p>
+        </div>	
+        <div class="gallery-container"></div>
+        
+        <div class="tomatoes">
+          <div class="dill"  id="all-dill">
+              <div class="tomato w-3" v-for="item in products">
+        <a :href="'tomato one.html#'+item.id" class="link">
+          <img v-bind:src="item.image" alt="item.title">
+          <p><b>{{ item.title }}</b> <br> {{ item.short_text }}</p>
+        </a>
+              </div>
+          </div>
+      </div>
+</div>
+</div>
+</div>
+  <div class="footer">
+  <div class="footer_content">
+    <div id="links">
+      <ul>
+        <li><a href="">PROFILE</a></li>
+        <li><a href="">MANAGEMENT</a></li>
+        <li><a href="tomato_all .html">PRODUCTS</a></li>
+        <li><a href="">R&D</a></li>
+        <li><a href="">LINKS</a></li>
+        <li><a href="">SITEMAP</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+    
+    <div class="social">
+        <a href="https://linkedin.com"><img src="Ico_in.png" alt="in"></a>
+        <a href="https://www.instagram.com"><img src="Ico_inst.png" alt="inst"></a>
+        <a href="https://www.youtube.com"><img src="Ico_tube.png" alt="youtube"></a>
+        <a href="https://twitter.com"><img src="Ico_tw.png" alt="twitter"></a>
+        <a href="https://facebook.com"><img src="Ico_fb.png" alt="facebook"></a>
+    </div>      
+  </div>
+  <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+</div>
+
+</body>
+</html>
